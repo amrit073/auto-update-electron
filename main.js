@@ -73,7 +73,7 @@ function createDefaultWindow() {
   return win;
 }
 autoUpdater.on('checking-for-update', () => {
-  sendStatusToWindow('Checking for update...');
+  sendStatusToWindow('Checking for update hehhehe...');
 })
 autoUpdater.on('update-available', (info) => {
   sendStatusToWindow('Update available.');
