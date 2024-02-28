@@ -9,6 +9,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    env:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
@@ -23,3 +26,5 @@ jobs:
 
     - name: Run publish
       run: npm run publish
+      env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
